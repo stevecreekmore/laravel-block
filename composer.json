@@ -1,0 +1,51 @@
+{
+    "name": "stevecreekmore/laravel-block",
+    "description": "A User can block another User",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steven Creekmore",
+            "email": "creekmore108@gmail.com",
+            "homepage": "https://github.com/stevecreekmore"
+        }
+    ],
+    "minimum-stability": "stable",
+    "homepage": "https://github.com/stevecreekmore/laravel-block",
+    "keywords": [
+        "Laravel",
+        "Laravel Block",
+        "Block users"
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "php": "^8.1",
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "stevecreekmore\\LaravelBlock\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "stevecreekmore\\LaravelBlock\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-f": "vendor/bin/phpunit --filter"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "stevecreekmore\\LaravelBlock\\LaravelBlockServiceProvider"
+            ],
+            "aliases": {
+                "LaravelBlock": "stevecreekmore\\LaravelBlock\\Facades\\LaravelBlock"
+            }
+        }
+    }
+}
