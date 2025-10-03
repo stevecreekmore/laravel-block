@@ -1,5 +1,6 @@
 # Laravel Block
-
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/stevecreekmore/laravel-block.svg?style=flat-square)](https://packagist.org/packages/stevecreekmore/laravel-block)
+[![Total Downloads](https://img.shields.io/packagist/dt/stevecreekmore/laravel-block.svg?style=flat-square)](https://packagist.org/packages/stevecreekmore/laravel-block)
 A simple Laravel package for blocking users.
 
 ## Requirements
