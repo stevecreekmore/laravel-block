@@ -86,43 +86,6 @@ Returns an array of IDs of the users a user is blocking, and who is blocking a u
 auth()->user()->getBlockingAndBlockersIds()
 ```
 
-Caches the IDs of the users a user is blocking. Default is 1 day.
-```php
-// 1 day
-auth()->user()->cacheBlocking();
-
-// 1 hour
-auth()->user()->cacheBlocking(3600);
-
-// 1 month
-auth()->user()->cacheBlocking(Carbon::addMonth());
-```
-
-Returns an array of IDs of the users a user is blocking.
-```php
-auth()->user()->getBlockingCache();
-```
-
-Caches the IDs of the users who are blocking a user. Default is 1 day.
-```php
-auth()->user()->cacheBlockers();
-```
-
-Returns an array of IDs of the users who are blocking a user.
-```php
-auth()->user()->getBlockersCache();
-```
-
-Clears the Blocking cache
-```php
-auth()->user()->clearBlockingCache();
-```
-
-Clears the Blockers cache
-```php
-auth()->user()->clearBlockersCache();
-```
-
 ## Testing
 
 ``` bash
